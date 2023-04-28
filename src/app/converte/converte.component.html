@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container , aling-item , bg-secondary text-dark p-6 ">
+    <div class="title"><h1>Conversor De Moeda</h1></div>
+
+    <input type="number" class="Real, form-control" placeholder="Valor em Real" [(ngModel)]="Real">
+    <br>
+
+    <div class="valores">
+<div class="conteudo">
+<input type="text" [(ngModel)]="Dolar" class="form-control,  p-10 col-5 " placeholder="Dolar">
+</div>
+<div class="valores">
+
+<input type="text" [(ngModel)]="Euro"class="form-control, p-10 col-5 " placeholder="Euro">
+</div>
+<div class="valores">
+
+<input type="text" [(ngModel)]="Libra" class="form-control, p-10 col-5  " placeholder="Libra">
+</div><br>
+
+</div>
+
+<button type="button" (click)="Calcular()" id="buton" class="buton , btn btn-dark , col-12">Calcular</button>
+
+<br>
+<br>
+
+<div type="card" >
+    <h5>Dolar</h5>
+<div  class="alert alert-dark">Dolar: {{Resultado1}}</div>
+<h5>Euro</h5>
+<div  class="alert alert-dark" >Euro: {{Resultado2}}</div>
+<h5>Libra</h5>
+<div  class="alert alert-dark"><h6>Libra: {{Resultado3}}</h6></div>
+</div>
+
+</div>
+
+</body>
+</html>
